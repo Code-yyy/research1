@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Assisted IoMT Research Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar container">
+      <div class="logo">IoMT Research</div>
+
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#domain" class="nav-link">Domain</a></li>
+        <li><a href="#milestones" class="nav-link">Milestones</a></li>
+        <li><a href="#documents" class="nav-link">Documents</a></li>
+        <li><a href="#slides" class="nav-link">Slides</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content reveal">
+      <span class="hero-tag">Final Year Research Project</span>
+      <h1>AI-Assisted IoMT Network Attack Detection for Remote Patient Monitoring Systems</h1>
+      <p>
+        This research proposes an edge-based security framework for medical IoT environments by combining
+        secure communication, honeypot-based threat intelligence, lightweight AI-driven attack detection,
+        and automated mitigation for remote patient monitoring systems.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#domain" class="btn btn-primary">Explore Project</a>
+        <a href="#about" class="btn btn-outline">Meet the Team</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <h3 class="counter" data-target="4">0</h3>
+          <p>Main Components</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="counter" data-target="2">0</h3>
+          <p>Supervisors</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="counter" data-target="6">0</h3>
+          <p>Key Domains</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOMAIN -->
+  <section id="domain" class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>Domain</h2>
+        <p>
+          This section presents the research background, identified gap, project problem,
+          objectives, methodology, and the technologies used in the proposed solution.
+        </p>
+      </div>
+
+      <div class="domain-grid">
+        <div class="card reveal">
+          <h3>Literature Survey</h3>
+          <p>
+            Existing literature shows that IoMT devices are highly vulnerable to cyberattacks due to
+            limited processing power, small memory capacity, and low energy resources. Many current
+            solutions focus only on detection or depend heavily on cloud-based processing.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Research Gap</h3>
+          <p>
+            There is a lack of practical edge-based solutions that combine secure communication,
+            local threat intelligence generation, lightweight detection, automated mitigation,
+            and secure local logging in one integrated framework for medical IoT systems.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Research Problem</h3>
+          <p>
+            Medical IoT devices used in remote patient monitoring are resource-constrained and exposed
+            to attacks such as unauthorized access, data theft, and denial-of-service attacks. Traditional
+            security solutions are often too heavy or too slow for real-time medical environments.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Research Objectives</h3>
+          <ul>
+            <li>Develop secure lightweight communication for IoMT devices.</li>
+            <li>Create a local edge honeypot to collect attack data.</li>
+            <li>Design a lightweight AI-based attack detection model.</li>
+            <li>Implement automated mitigation and secure local incident logging.</li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <h3>Methodology</h3>
+          <p>
+            The system uses ESP32-based IoMT devices and a Raspberry Pi gateway. Sensitive data is protected
+            using lightweight encryption. A local honeypot captures attack attempts, a lightweight model
+            detects suspicious traffic, and an SDN-inspired mitigation mechanism responds to threats while
+            preserving incident logs securely.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Technologies Used</h3>
+          <div class="tags">
+            <span>ESP32</span>
+            <span>Raspberry Pi</span>
+            <span>Python</span>
+            <span>C / C++</span>
+            <span>TensorFlow Lite</span>
+            <span>Flask</span>
+            <span>Wireshark</span>
+            <span>Honeypot</span>
+            <span>SDN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MILESTONES -->
+  <section id="milestones" class="section alt-section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>Milestones</h2>
+        <p>
+          This section describes the major project assessments with dates, descriptions, and marks allocated.
+        </p>
+      </div>
+
+      <div class="filter-box reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="presentation">Presentations</button>
+        <button class="filter-btn" data-filter="document">Documents</button>
+        <button class="filter-btn" data-filter="final">Final</button>
+      </div>
+
+      <div class="milestone-grid">
+        <div class="milestone-card reveal" data-category="document">
+          <h3>Project Proposal</h3>
+          <p><strong>Date:</strong> May 2025</p>
+          <p><strong>Marks:</strong> 6%</p>
+          <p>Submission and evaluation of the initial project proposal and research idea.</p>
+        </div>
+
+        <div class="milestone-card reveal" data-category="presentation">
+          <h3>Progress Presentation 1</h3>
+          <p><strong>Date:</strong> July 2025</p>
+          <p><strong>Marks:</strong> 15%</p>
+          <p>Evaluation of literature review, domain understanding, and early system progress.</p>
+        </div>
+
+        <div class="milestone-card reveal" data-category="presentation">
+          <h3>Progress Presentation 2</h3>
+          <p><strong>Date:</strong> December 2025</p>
+          <p><strong>Marks:</strong> 18%</p>
+          <p>Assessment of advanced implementation, testing progress, and system integration.</p>
+        </div>
+
+        <div class="milestone-card reveal" data-category="final">
+          <h3>Final Assessment</h3>
+          <p><strong>Date:</strong> April 2026</p>
+          <p><strong>Marks:</strong> 19%</p>
+          <p>Final system demonstration, evaluation, and submission of the completed research work.</p>
+        </div>
+
+        <div class="milestone-card reveal" data-category="final">
+          <h3>Viva</h3>
+          <p><strong>Date:</strong> April 2026</p>
+          <p><strong>Marks:</strong> 20%</p>
+          <p>Individual and team-based oral evaluation of the research knowledge and contribution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENTS -->
+  <section id="documents" class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>Documents</h2>
+        <p>This section provides access to project-related documents and reports.</p>
+      </div>
+
+      <div class="resource-grid">
+        <div class="resource-card reveal">
+          <h3>Project Charter</h3>
+          <p>Overview of the project scope, team details, and initial planning.</p>
+          <a href="#" class="resource-link">View Document</a>
+        </div>
+
+        <div class="resource-card reveal">
+          <h3>Proposal Document</h3>
+          <p>Detailed research proposal including domain background and methodology.</p>
+          <a href="#" class="resource-link">View Document</a>
+        </div>
+
+        <div class="resource-card reveal">
+          <h3>Status Documents</h3>
+          <p>Progress-related supporting documents and evaluation records.</p>
+          <a href="#" class="resource-link">View Document</a>
+        </div>
+
+        <div class="resource-card reveal">
+          <h3>Final Report</h3>
+          <p>Comprehensive final report of the project and individual components.</p>
+          <a href="#" class="resource-link">View Document</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDES -->
+  <section id="slides" class="section alt-section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>Slides of Past Presentations</h2>
+        <p>This section contains the presentation slides used during each major evaluation stage.</p>
+      </div>
+
+      <div class="resource-grid">
+        <div class="resource-card reveal">
+          <h3>Proposal Presentation</h3>
+          <p>Slides used for the initial proposal presentation.</p>
+          <a href="#" class="resource-link">View Slides</a>
+        </div>
+
+        <div class="resource-card reveal">
+          <h3>Progress Presentation 1</h3>
+          <p>Slides showing early progress and domain analysis.</p>
+          <a href="#" class="resource-link">View Slides</a>
+        </div>
+
+        <div class="resource-card reveal">
+          <h3>Progress Presentation 2</h3>
+          <p>Slides showing implementation and testing progress.</p>
+          <a href="#" class="resource-link">View Slides</a>
+        </div>
+
+        <div class="resource-card reveal">
+          <h3>Final Presentation</h3>
+          <p>Slides used to present the final solution and outcomes.</p>
+          <a href="#" class="resource-link">View Slides</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>About Us</h2>
+        <p>
+          Meet the research team, their responsibilities, and the academic supervisors who guided the project.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <img src="images/member1.jpg" alt="Member 1">
+          <h3>Ahamed B. A. A.</h3>
+          <p><strong>Student ID:</strong> IT22316554</p>
+          <p><strong>Role:</strong> Secure Communication</p>
+          <p><strong>Email:</strong> yourmail@example.com</p>
+        </div>
+
+        <div class="team-card reveal">
+          <img src="images/member2.jpg" alt="Member 2">
+          <h3>Group Member 02</h3>
+          <p><strong>Student ID:</strong> ITxxxxxxxx</p>
+          <p><strong>Role:</strong> Local Edge Honeypot</p>
+          <p><strong>Email:</strong> member2@example.com</p>
+        </div>
+
+        <div class="team-card reveal">
+          <img src="images/member3.jpg" alt="Member 3">
+          <h3>Group Member 03</h3>
+          <p><strong>Student ID:</strong> ITxxxxxxxx</p>
+          <p><strong>Role:</strong> AI Detection Model</p>
+          <p><strong>Email:</strong> member3@example.com</p>
+        </div>
+
+        <div class="team-card reveal">
+          <img src="images/member4.jpg" alt="Member 4">
+          <h3>Group Member 04</h3>
+          <p><strong>Student ID:</strong> ITxxxxxxxx</p>
+          <p><strong>Role:</strong> Automated Mitigation</p>
+          <p><strong>Email:</strong> member4@example.com</p>
+        </div>
+      </div>
+
+      <div class="supervisor-wrapper reveal">
+        <div class="supervisor-card">
+          <h3>Supervisor</h3>
+          <p>Mr. Kanishka Yapa</p>
+        </div>
+        <div class="supervisor-card">
+          <h3>Co-Supervisor</h3>
+          <p>Mr. Deemantha Siriwardana</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section alt-section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>Contact Us</h2>
+        <p>Get in touch with the research group through the following contact details.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info card reveal">
+          <h3>General Contact Information</h3>
+          <p><strong>Phone:</strong> +94 77 123 4567</p>
+          <p><strong>Email:</strong> researchgroup@example.com</p>
+          <p><strong>Institution:</strong> Sri Lanka Institute of Information Technology</p>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <input type="text" placeholder="Subject" required>
+          <textarea rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 AI-Assisted IoMT Research Project | SLIIT</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
